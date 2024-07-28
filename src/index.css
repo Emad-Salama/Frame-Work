@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans
+}
+
+.active:not(.home) {
+  @apply bg-[#1ABC9C]
+}
+
+.row {
+  @apply flex  p-20 ;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  border: 1px white solid;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+img {
+  width: 20rem;
+}
+
+.line {
+  width: 5rem;
+  height: 0.25rem;
+}
+.layer {
+  background-color: #1abc9ce6;
+  opacity: 0;
+  cursor: pointer;
+  transition: .6s opacity;
+}
+.card:hover .layer {
+opacity: 1;
+}
+
